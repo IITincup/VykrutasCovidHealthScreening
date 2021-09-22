@@ -1,5 +1,5 @@
 function Q1Check() {
-  if (document.getElementById("q1no").checked) {
+  if (document.getElementById("q1yes").checked) {
     document.getElementById("Q2").style.display = "block";
   } else {
     document.getElementById("Q2").style.display = "none";
@@ -10,7 +10,7 @@ function Q1Check() {
 }
 
 function Q2Check() {
-  if (document.getElementById("q2no").checked) {
+  if (document.getElementById("q1yes").checked) {
     document.getElementById("Q3").style.display = "block";
   } else {
     document.getElementById("Q2").style.display = "none";
@@ -21,7 +21,7 @@ function Q2Check() {
 }
 
 function Q3Check() {
-  if (document.getElementById("q3no").checked) {
+  if (document.getElementById("q1yes").checked) {
     document.getElementById("passed").style.display = "block";
     document.getElementById("notpassed").style.display = "none";
   } else {
