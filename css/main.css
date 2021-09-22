@@ -1,1 +1,68 @@
-/* placeholder
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+.questions {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  width: 80%;
+  margin: auto;
+}
+
+#Q2 {
+  display: none;
+}
+
+#Q3 {
+  display: none;
+}
+
+#passed, #notpassed {
+  display: none;
+}
+
+#passed {
+  background-color: rgb(33, 177, 86);
+  color: white;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+
+#passedtext {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#notpassed {
+  background-color: rgb(177, 33, 33);
+  color: white;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  text-align:center;
+   
+}
+
+#notpassedtext {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#tryagain { 
+  margin-top: 2rem;
+}

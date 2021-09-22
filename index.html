@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script type="text/javascript" src="js/main.js"></script>
-  <style type="text/css" src="css/main.css"></style>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,39 +9,65 @@
     <title>Vykrutas Covid Health Screening</title>
   </head>
   <body>
-    <div><p>VYKRUTAS COVID HEALTH SCREENING</p></div>
+    <div class="header"><h1>VYKRUTAS COVID HEALTH SCREENING</h1></div>
     <div class="questions">
       <div class="Q1">
-        <p3> Have you traveled outside of Canada in the last 14 days ? </p3>
-        <br>
+        <p3>Q1. Have you traveled outside of Canada in the last 14 days ? </p3>
+        <br />
         <p3>
           Yes
-          <input type="radio" name="question1" />
+          <input type="radio" onclick="javascript:Q1Check();" name="question1" id="q1yes" />
           No
-          <input type="radio" name="question1" />
+          <input type="radio" onclick="javascript:Q1Check();" name="question1" />
         </p3>
       </div>
-      <br>
-      <div class="Q2" >
-        <p3> Have you been in a close contact with a case of COVID-19 ? </p3>
-        <br>
+      <br />
+      <div id="Q2">
+        <p3>Q2. Have you been in a close contact with a case of COVID-19 ? </p3>
+        <br />
         <p3>
           Yes
-          <input type="radio" name="question2" />
+          <input type="radio" onclick="javascript:Q2Check();" name="question2" id="q2yes" />
           No
-          <input type="radio" name="question2" />
+          <input type="radio" onclick="javascript:Q2Check();" name="question2" />
         </p3>
       </div>
-      <br>
-      <div class="Q3" >
-        <p3> Do you have any new onset (or worsening) of the following symptoms: Fever, Cough, Shortness of breath, Runny nose, Sore throat, Chills, Painful swallowing, Nasal congestion, Feeling unwell / fatigued, Nausea / vomiting / diarrhea, Unexplained loss of appetite, Loss of sense of taste or smell, Muscle / joint aches, Headache, Conjunctivitis (commonly known as pink eye) </p3>
-        <br>
+      <br />
+      <div id="Q3" >
+        <p3>Q3.
+          Do you have any new onset (or worsening) of the following symptoms:
+          Fever, 
+          Cough, Shortness of breath, Runny nose, Sore throat, Chills,
+          Painful swallowing, Nasal congestion, Feeling unwell / fatigued,
+          Nausea / vomiting / diarrhea, Unexplained loss of appetite, Loss of
+          sense of taste or smell, Muscle / joint aches, Headache,
+          Conjunctivitis (commonly known as pink eye) )
+        </p3>
+        <br />
         <p3>
           Yes
-          <input type="radio" name="question3" />
+          <input type="radio" onclick="javascript:Q3Check();" name="question3" id="q3yes" />
           No
-          <input type="radio" name="question3" />
+          <input type="radio" onclick="javascript:Q3Check();" name="question3" />
         </p3>
+      </div>
+
+      <div id="passed" >
+        <h1 id="passedtext">
+          PASS
+        </h1>
+
+        
+      </div>
+
+      <div id="notpassed" >
+        <h1 id="notpassedtext">
+          NOT PASSED
+          <!-- <br><input type="button" value="try again" onclick="javascript:refresh();" id="tryagain"/> -->
+        </h1>
+        <p>
+          
+        </p>
       </div>
 
     </div>
