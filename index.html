@@ -12,43 +12,53 @@
     <div class="header"><h1>VYKRUTAS COVID HEALTH SCREENING</h1></div>
     <div class="questions">
       <div class="Q1">
-        <p3>Q1. Have you traveled outside of Canada in the last 14 days ? </p3>
-        <br />
-        <p3>
+        <h4>
+          Q1. Have you traveled outside of Canada in the last 14 days ? 
+          <br/>
           Yes
           <input type="radio" onclick="javascript:Q1Check();" name="question1"/>
           No
           <input type="radio" onclick="javascript:Q1Check();" name="question1" id="q1no"/>
-        </p3>
+        </h4>
       </div>
-      <br />
+      
       <div id="Q2">
-        <p3>Q2. Have you been in a close contact with a case of COVID-19 ? </p3>
-        <br />
-        <p3>
+        <h4>
+          Q2. Have you been in a close contact with a case of COVID-19 ? 
+          <br/>
           Yes
           <input type="radio" onclick="javascript:Q2Check();" name="question2"/>
           No
           <input type="radio" onclick="javascript:Q2Check();" name="question2" id="q2no"/>
-        </p3>
+        </h4>
       </div>
-      <br />
       <div id="Q3" >
-        <p3>Q3.
+        <h4>Q3.
           Do you have any new onset (or worsening) of the following symptoms:
-          Fever, Cough, Shortness of breath, Runny nose, Sore throat, Chills,
-          Painful swallowing, Nasal congestion, Feeling unwell / fatigued,
-          Nausea / vomiting / diarrhea, Unexplained loss of appetite, Loss of
-          sense of taste or smell, Muscle / joint aches, Headache,
-          Conjunctivitis (commonly known as pink eye) )
-        </p3>
-        <br />
-        <p3>
+          <ul>
+            <li>Fever</li>
+            <li>Cough</li>
+            <li>Shortness of breath</li>
+            <li>Runny nose</li>
+            <li>Sore throat</li>
+            <li>Chills</li>
+            <li>Painful swallowing</li>
+            <li>Nasal congestion</li>
+            <li>Feeling unwell / fatigued</li>
+            <li>Nausea / vomiting / diarrhea</li>
+            <li>Unexplained loss of appetite</li>
+            <li>Loss of sense of taste or smell</li>
+            <li>Muscle / joint aches</li>
+            <li>Headache</li>
+            <li>Conjunctivitis</li>
+          </ul>
+        </h4>
+        <h4>
           Yes
           <input type="radio" onclick="javascript:Q3Check();" name="question3"/>
           No
           <input type="radio" onclick="javascript:Q3Check();" name="question3" id="q3no"/>
-        </p3>
+        </h4>
       </div>
 
       <div id="passed" >
@@ -62,7 +72,6 @@
       <div id="notpassed" >
         <h1 id="notpassedtext">
           NOT PASSED
-          <!-- <br><input type="button" value="try again" onclick="javascript:refresh();" id="tryagain"/> -->
         </h1>
         <p>
           
