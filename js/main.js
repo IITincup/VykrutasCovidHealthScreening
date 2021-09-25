@@ -46,6 +46,7 @@ function q1(who) {
       document.getElementById("q1Myself").disabled = true;
       document.getElementById("contact").style.display = "block";
       document.querySelectorAll("h4.child").forEach((child) => (child.style.display = "inline"));
+      window.scrollBy(0, 1000);
       break;
     default:
       document.getElementById("q1Over12").disabled = true;
@@ -53,6 +54,7 @@ function q1(who) {
       adult = false;
       document.getElementById("contact").style.display = "block";
       document.querySelectorAll("h4.child").forEach((child) => (child.style.display = "inline"));
+      window.scrollBy(0, 1000);
       break;
   }
 }

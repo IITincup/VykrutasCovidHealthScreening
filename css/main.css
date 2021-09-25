@@ -189,3 +189,9 @@ h4 {
   text-shadow: 1px 2px 2px black;
   display: inline;
 }
+
+#q1Myself,
+#q1Under12,
+#q1Over12 {
+  width: 250px;
+}
