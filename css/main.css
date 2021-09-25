@@ -140,6 +140,7 @@ body {
 }
 
 button {
+  background-color: #ffffff;
   margin-top: 0.2rem;
   font-size: 1rem;
   font-weight: 600;
@@ -147,6 +148,27 @@ button {
 
   border-radius: 10px;
   border: 1px solid rgb(0, 0, 0);
+}
+
+button:disabled {
+  background-color: rgba(0, 0, 0, 0.205);
+  color: rgba(255, 255, 255, 0.171)
+}
+
+input[type="button"] {
+  background-color: #ffffff;
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Poppins";
+
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+input[type="button"]:disabled {
+  background-color: rgba(0, 0, 0, 0.205);
+  color: rgba(255, 255, 255, 0.171)
 }
 
 li {

@@ -30,9 +30,19 @@
             Who are you filling out the Health Screening form for:
           </h4>
           <button onclick="q1('myself');" id="q1Myself">Myself</button><br />
-          <button onclick="q1('under12');" id="q1Under12">My child / children under 12</button
-          ><br />
-          <button onclick="q1('over12');" id="q1Over12">My child / children over 12</button>
+          <!-- <button onclick="q1('under12');" id="q1Under12">
+            My child / children under 12
+          </button><br /> -->
+          <input
+            type="button"
+            id="q1Under12"
+            value="My child / children under 12"
+            onclick="q1('under12');"
+          /><br />
+          <button onclick="q1('over12');" id="q1Over12">
+            My child / children over 12
+          </button>
+          
           <div id="age">
             <h4 id="qestion">Are you over 16 years old ?</h4>
             <button onclick="age('over');" id="ageOver">Yes</button>
@@ -65,8 +75,12 @@
                   Unexplained loss of appetite - Loss of sense of taste or smell
                   - Muscle/ Joint aches - Headache - Conjunctivitis (Pink eye)
                 </h4>
-                <button onclick="fullSymptomps('yes');" id="fullSymptomsYes">Yes</button>
-                <button onclick="fullSymptomps('no');" id="fullSymptomsNo">No</button>
+                <button onclick="fullSymptomps('yes');" id="fullSymptomsYes">
+                  Yes
+                </button>
+                <button onclick="fullSymptomps('no');" id="fullSymptomsNo">
+                  No
+                </button>
               </div>
 
               <div id="seriousSymptomps">
@@ -75,30 +89,47 @@
                   the following symptoms: - Fever (38 degrees C) - Cough -
                   Shortness of breath - Loss of sense of smell or taste?
                 </h4>
-                <button onclick="seriousSymptomps('yes');" id="seriousSymptompsYes">Yes</button>
-                <button onclick="seriousSymptomps('no');" id="seriousSymptompsNo">No</button>
+                <button
+                  onclick="seriousSymptomps('yes');"
+                  id="seriousSymptompsYes"
+                >
+                  Yes
+                </button>
+                <button
+                  onclick="seriousSymptomps('no');"
+                  id="seriousSymptompsNo"
+                >
+                  No
+                </button>
 
                 <div id="smallSymptomps">
                   <h4 id="qestion">
                     Does your child / children have any new onset or worsening
-                    of the following symptoms: - Runny nose - Sore Throat -
+                    of the f ollowing symptoms: - Runny nose - Sore Throat -
                     Chills - Painful swallowing - Nasal congestion - Feeling
                     unwell/ fatigued - Nausea/ Vomiting/ Diarrhea - Unexplained
                     loss of appetite- Muscle/ Joint aches - Headache -
                     Conjunctivitis (Pink eye)
                   </h4>
-                  <button onclick="smallSymptomps('yes');" id="smallSymptompsYes">Yes</button>
-                  <button onclick="smallSymptomps('no');" id="smallSymptompsNo">No</button>
+                  <button
+                    onclick="smallSymptomps('yes');"
+                    id="smallSymptompsYes"
+                  >
+                    Yes
+                  </button>
+                  <button onclick="smallSymptomps('no');" id="smallSymptompsNo">
+                    No
+                  </button>
                 </div>
               </div>
 
               <div id="proof">
                 <h4 id="qestion">
-                  The city of calgary vacine passport bylaw 65m2021 requires
-                  vykrutas to asks for proof of vaccination or recent neghative
-                  covid19 test or medical exemption, to gain entry. Do you have
-                  at least on of the listed items ? (Be ready to show it to the
-                  personal inside)
+                  The City of Calgary Vaccine Passport Bylaw(65m2021) requires
+                  our organization to ask for proof of vaccination or recent
+                  negative COVID-19 test or medical exemption, to gain entry. Do
+                  you have one of the documents listed above ? (Be ready to show
+                  it to the volunteer inside)
                 </h4>
                 <button onclick="proof('yes');" id="proofYes">Yes</button>
                 <button onclick="proof('no');" id="proofNo">No</button>
@@ -120,7 +151,7 @@
 
             <h3>
               Thank you. You can now enter the school. Please show this screen
-              to the personel inside.
+              to the volunteer inside.
             </h3>
           </div>
         </div>
@@ -136,8 +167,8 @@
           <div id="result">
             <h1 class="time"></h1>
             <h3>
-              Sorry. At this time you are unable to enter Vykrutas Dancing
-              School. We encourage you to visit the online
+              Sorry. At this time you are unable to attend class. We encourage
+              you to visit the online
               <a
                 link
                 href="https://myhealth.alberta.ca/Journey/COVID-19/Pages/Assessment.aspx"
