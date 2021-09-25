@@ -11,161 +11,50 @@
   </head>
 
   <body>
-    <div class="container">
-      <img
-        src="images/OriginalVykrutasLogo.svg"
-        alt="Vykrutas Logo"
-        height="150"
-        width="150"
-        color="000"
-        id="homeLogo"
-      />
+    <img
+      src="images/OriginalVykrutasLogo.svg"
+      alt="Vykrutas Logo"
+      height="150"
+      width="150"
+      color="000"
+      id="homeLogo"
+    />
+    <dsiv class="container" style="text-align: center; padding-bottom: 2rem">
       <div class="header">
         <h2>VYKRUTAS COVID HEALTH SCREENING</h2>
       </div>
 
-      <div class="questions">
-        <div id="who">
-          <h4 id="qestion">
-            Who are you filling out the Health Screening form for:
-          </h4>
-          <button onclick="q1('myself');" id="q1Myself">Myself</button><br />
-          <button onclick="q1('under12');" id="q1Under12">My child / children under 12</button
-          ><br />
-          <button onclick="q1('over12');" id="q1Over12">My child / children over 12</button>
-          <div id="age">
-            <h4 id="qestion">Are you over 16 years old ?</h4>
-            <button onclick="age('over');" id="ageOver">Yes</button>
-            <button onclick="age('under');" id="ageUnder">No</button>
-          </div>
+      <h4
+        style="
+          text-align: center;
+          width: 80%;
+          margin: auto;
+          margin-bottom: 1rem;
+        "
+      >
+        All YMCA Calgary Members and participants will be asked to complete this
+        5-question digital COVID-19 health screening upon arrival.
+        <br /><br />
+        This tool will help you determine if it is safe for you and those in
+        your party to participate. The screening data is secure and won't be
+        collected or shared in any way - it's simply a way for you to know if it
+        is safe for you and others to participate.
+      </h4>
 
-          <div id="contact">
-            <h4 id="qestion">
-              Have you or your child / children been a household contact of a
-              case of COVID-19 in the last 14 days?
-            </h4>
-            <button onclick="contact('yes');" id="contactYes">Yes</button>
-            <button onclick="contact('no');" id="contactNo">No</button>
-
-            <div id="travel">
-              <h4 id="qestion">
-                Have you or your child / children returned to Canada from
-                outside the country in the past 14 days AND been required by the
-                Government of Canada to quarantine?
-              </h4>
-              <button onclick="travel('yes');" id="travelYes">Yes</button>
-              <button onclick="travel('no');" id="travelNo">No</button>
-
-              <div id="fullSymptomps">
-                <h4 id="qestion">
-                  Do you have any new onset or worsening of the following
-                  symptoms: - Fever - Cough - Shortness of breath - Runny nose -
-                  Sore Throat - Chills - Painful swallowing - Nasal congestion -
-                  Feeling unwell/ fatigued - Nausea/ Vomiting/ Diarrhea -
-                  Unexplained loss of appetite - Loss of sense of taste or smell
-                  - Muscle/ Joint aches - Headache - Conjunctivitis (Pink eye)
-                </h4>
-                <button onclick="fullSymptomps('yes');" id="fullSymptomsYes">Yes</button>
-                <button onclick="fullSymptomps('no');" id="fullSymptomsNo">No</button>
-              </div>
-
-              <div id="seriousSymptomps">
-                <h4 id="qestion">
-                  Does your child / children have any new onset or worsening of
-                  the following symptoms: - Fever (38 degrees C) - Cough -
-                  Shortness of breath - Loss of sense of smell or taste?
-                </h4>
-                <button onclick="seriousSymptomps('yes');" id="seriousSymptompsYes">Yes</button>
-                <button onclick="seriousSymptomps('no');" id="seriousSymptompsNo">No</button>
-
-                <div id="smallSymptomps">
-                  <h4 id="qestion">
-                    Does your child / children have any new onset or worsening
-                    of the following symptoms: - Runny nose - Sore Throat -
-                    Chills - Painful swallowing - Nasal congestion - Feeling
-                    unwell/ fatigued - Nausea/ Vomiting/ Diarrhea - Unexplained
-                    loss of appetite- Muscle/ Joint aches - Headache -
-                    Conjunctivitis (Pink eye)
-                  </h4>
-                  <button onclick="smallSymptomps('yes');" id="smallSymptompsYes">Yes</button>
-                  <button onclick="smallSymptomps('no');" id="smallSymptompsNo">No</button>
-                </div>
-              </div>
-
-              <div id="proof">
-                <h4 id="qestion">
-                  The city of calgary vacine passport bylaw 65m2021 requires
-                  vykrutas to asks for proof of vaccination or recent neghative
-                  covid19 test or medical exemption, to gain entry. Do you have
-                  at least on of the listed items ? (Be ready to show it to the
-                  personal inside)
-                </h4>
-                <button onclick="proof('yes');" id="proofYes">Yes</button>
-                <button onclick="proof('no');" id="proofNo">No</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="passed">
-          <img
-            src="images/OriginalVykrutasLogo.svg"
-            alt="Vykrutas Logo"
-            height="250"
-            width="250"
-            id="resImage"
-          />
-          <div id="result">
-            <h1 class="time"></h1>
-
-            <h3>
-              Thank you. You can now enter the school. Please show this screen
-              to the personel inside.
-            </h3>
-          </div>
-        </div>
-
-        <div id="notpassed">
-          <img
-            src="images/OriginalVykrutasLogo.svg"
-            alt="Vykrutas Logo"
-            height="250"
-            width="250"
-            id="resImage"
-          />
-          <div id="result">
-            <h1 class="time"></h1>
-            <h3>
-              Sorry. At this time you are unable to enter Vykrutas Dancing
-              School. We encourage you to visit the online
-              <a
-                link
-                href="https://myhealth.alberta.ca/Journey/COVID-19/Pages/Assessment.aspx"
-                >Alberta Screening Tool</a
-              >
-              or to call 811
-            </h3>
-          </div>
-        </div>
-
-        <div id="exception">
-          <img
-            src="images/OriginalVykrutasLogo.svg"
-            alt="Vykrutas Logo"
-            height="250"
-            width="250"
-            id="resImage"
-          />
-          <div id="result">
-            <h1 class="time"></h1>
-            <h2>
-              Plese proceed inside. You will have to complete the screening in
-              person
-              <br /><br />
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
+      <a
+        href="pages/healthScreen.html"
+        style="
+          background-color: #ffffff;
+          color: rgb(0, 0, 0);
+          text-decoration: none;
+          border: 1px solid rgb(0, 0, 0);
+          border-radius: 10px;
+          padding: 5px;
+          font-weight: 600;
+        "
+      >
+        TAKE THE SELF-ASSESMENTS
+      </a>
+    </dsiv>
   </body>
 </html>

@@ -36,6 +36,7 @@ body {
 .container {
   position: absolute;
   min-height: 100%;
+  min-width: 100%;
 }
 .container:before {
   background: url("../images/back.jpg") no-repeat center center fixed; 

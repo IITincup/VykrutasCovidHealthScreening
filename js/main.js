@@ -176,7 +176,3 @@ function proof(YN) {
       break;
   }
 }
-
-function refresh() {
-  location.reload();
-}
