@@ -29,68 +29,89 @@
           <h4 id="qestion">
             Who are you filling out the Health Screening form for:
           </h4>
+          <br />
           <button onclick="q1('myself');" id="q1Myself">Myself</button><br />
-          <!-- <button onclick="q1('under12');" id="q1Under12">
-            My child / children under 12
-          </button><br /> -->
-          <input
-            type="button"
-            id="q1Under12"
-            value="My child / children under 12"
-            onclick="q1('under12');"
-          /><br />
+          <button onclick="q1('under12');" id="q1Under12">
+            My child / children under 12</button
+          ><br />
           <button onclick="q1('over12');" id="q1Over12">
             My child / children over 12
           </button>
-          
+          <br /><br />
           <div id="age">
             <h4 id="qestion">Are you over 16 years old ?</h4>
+            <br />
             <button onclick="age('over');" id="ageOver">Yes</button>
-            <button onclick="age('under');" id="ageUnder">No</button>
+            <button onclick="age('under'); datetime();" id="ageUnder">No</button><br />
+            <br />
           </div>
-
           <div id="contact">
+            <h4 class="you">Have you</h4>
+            <h4 class="child">Have your child / children</h4>
             <h4 id="qestion">
-              Have you or your child / children been a household contact of a
-              case of COVID-19 in the last 14 days?
+              been a household contact of a case of COVID-19 in the last 14
+              days?
             </h4>
-            <button onclick="contact('yes');" id="contactYes">Yes</button>
+            <br />
+            <button onclick="contact('yes');  datetime();" id="contactYes">Yes</button>
             <button onclick="contact('no');" id="contactNo">No</button>
-
+            <br /><br />
             <div id="travel">
+              <h4 class="you">Have you</h4>
+              <h4 class="child">Have your child / children</h4>
               <h4 id="qestion">
-                Have you or your child / children returned to Canada from
-                outside the country in the past 14 days AND been required by the
-                Government of Canada to quarantine?
+                returned to Canada from outside the country in the past 14 days
+                AND been required by the Government of Canada to quarantine?
               </h4>
-              <button onclick="travel('yes');" id="travelYes">Yes</button>
+              <br />
+              <button onclick="travel('yes');  datetime();" id="travelYes">Yes</button>
               <button onclick="travel('no');" id="travelNo">No</button>
-
+              <br /><br />
               <div id="fullSymptomps">
                 <h4 id="qestion">
                   Do you have any new onset or worsening of the following
-                  symptoms: - Fever - Cough - Shortness of breath - Runny nose -
-                  Sore Throat - Chills - Painful swallowing - Nasal congestion -
-                  Feeling unwell/ fatigued - Nausea/ Vomiting/ Diarrhea -
-                  Unexplained loss of appetite - Loss of sense of taste or smell
-                  - Muscle/ Joint aches - Headache - Conjunctivitis (Pink eye)
+                  symptoms:
+                  <ul>
+                    <li>Fever (38 degrees C)</li>
+                    <li>Cough</li>
+                    <li>Shortness of breath</li>
+                    <li>Loss of sense of smell or taste?</li>
+                    <li>Runny nose</li>
+                    <li>Sore Throat</li>
+                    <li>Chills</li>
+                    <li>Painful swallowing</li>
+                    <li>Nasal congestion</li>
+                    <li>Feeling</li>
+                    <li>Unwell/ fatigued</li>
+                    <li>Nausea/ Vomiting/ Diarrhea</li>
+                    <li>Unexplained loss of appetite</li>
+                    <li>Muscle/ Joint aches</li>
+                    <li>Headache</li>
+                    <li>Conjunctivitis (Pink eye)</li>
+                  </ul>
                 </h4>
-                <button onclick="fullSymptomps('yes');" id="fullSymptomsYes">
+                <button onclick="fullSymptomps('yes');  datetime();" id="fullSymptomsYes">
                   Yes
                 </button>
                 <button onclick="fullSymptomps('no');" id="fullSymptomsNo">
-                  No
-                </button>
+                  No</button
+                ><br /><br />
               </div>
 
               <div id="seriousSymptomps">
                 <h4 id="qestion">
                   Does your child / children have any new onset or worsening of
-                  the following symptoms: - Fever (38 degrees C) - Cough -
-                  Shortness of breath - Loss of sense of smell or taste?
+                  the following symptoms:
+                  <ul>
+                    <li>Fever (38 degrees C)</li>
+                    <li>Cough</li>
+                    <li>Shortness of breath</li>
+                    <li>Loss of sense of smell or taste?</li>
+                  </ul>
                 </h4>
+                <br />
                 <button
-                  onclick="seriousSymptomps('yes');"
+                  onclick="seriousSymptomps('yes');  datetime();"
                   id="seriousSymptompsYes"
                 >
                   Yes
@@ -101,25 +122,36 @@
                 >
                   No
                 </button>
-
+                <br /><br />
                 <div id="smallSymptomps">
                   <h4 id="qestion">
                     Does your child / children have any new onset or worsening
-                    of the f ollowing symptoms: - Runny nose - Sore Throat -
-                    Chills - Painful swallowing - Nasal congestion - Feeling
-                    unwell/ fatigued - Nausea/ Vomiting/ Diarrhea - Unexplained
-                    loss of appetite- Muscle/ Joint aches - Headache -
-                    Conjunctivitis (Pink eye)
+                    of the following symptoms:
+                    <ul>
+                      <li>Runny nose</li>
+                      <li>Sore Throat</li>
+                      <li>Chills</li>
+                      <li>Painful swallowing</li>
+                      <li>Nasal congestion</li>
+                      <li>Feeling</li>
+                      <li>Unwell/ fatigued</li>
+                      <li>Nausea/ Vomiting/ Diarrhea</li>
+                      <li>Unexplained loss of appetite</li>
+                      <li>Muscle/ Joint aches</li>
+                      <li>Headache</li>
+                      <li>Conjunctivitis (Pink eye)</li>
+                    </ul>
                   </h4>
+                  <br />
                   <button
-                    onclick="smallSymptomps('yes');"
+                    onclick="smallSymptomps('yes'); datetime();"
                     id="smallSymptompsYes"
                   >
                     Yes
                   </button>
-                  <button onclick="smallSymptomps('no');" id="smallSymptompsNo">
-                    No
-                  </button>
+                  <button onclick="smallSymptomps('no'); datetime();" id="smallSymptompsNo">
+                    No</button
+                  ><br /><br />
                 </div>
               </div>
 
@@ -131,8 +163,9 @@
                   you have one of the documents listed above ? (Be ready to show
                   it to the volunteer inside)
                 </h4>
-                <button onclick="proof('yes');" id="proofYes">Yes</button>
-                <button onclick="proof('no');" id="proofNo">No</button>
+                <br />
+                <button onclick="proof('yes'); datetime();" id="proofYes">Yes</button>
+                <button onclick="proof('no'); datetime();" id="proofNo">No</button>
               </div>
             </div>
           </div>
@@ -140,7 +173,7 @@
 
         <div id="passed">
           <img
-            src="../images/OriginalVykrutasLogo.svg"
+            src="../images/OriginalVykrutasLogo-cropped.svg"
             alt="Vykrutas Logo"
             height="250"
             width="250"
@@ -158,7 +191,7 @@
 
         <div id="notpassed">
           <img
-            src="../images/OriginalVykrutasLogo.svg"
+            src="../images/OriginalVykrutasLogo-cropped.svg"
             alt="Vykrutas Logo"
             height="250"
             width="250"
@@ -181,7 +214,7 @@
 
         <div id="exception">
           <img
-            src="../images/OriginalVykrutasLogo.svg"
+            src="../images/OriginalVykrutasLogo-cropped.svg"
             alt="Vykrutas Logo"
             height="250"
             width="250"

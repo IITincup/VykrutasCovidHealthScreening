@@ -1,36 +1,24 @@
 var adult = true;
 var over12 = false;
-window.onload = function datetime() {
+
+function datetime() {
   let date = new Date();
+  let month = [ "Jan", "Feb","Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec", ];
   // let month = [
-  //   "Jan",
-  //   "Feb",
-  //   "Mar",
-  //   "Apr",
+  //   "January",
+  //   "February",
+  //   "March",
+  //   "April",
   //   "May",
   //   "June",
   //   "July",
-  //   "Aug",
-  //   "Sept",
-  //   "Oct",
-  //   "Nov",
-  //   "Dec",
+  //   "August",
+  //   "September",
+  //   "October",
+  //   "November",
+  //   "December",
   // ];
-  let month = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  let formatedDate = month[date.getMonth()] + " " + date.getDate();
+  let formatedDate = month[date.getMonth()] + " " + date.getDate() + " " + date.getFullYear();
   let minutes = date.getMinutes();
   minutes = minutes < 10 ? "0" + minutes : minutes;
   let formattedTime = "<br/>" + date.getHours() + ":" + minutes;
@@ -39,11 +27,14 @@ window.onload = function datetime() {
   times.forEach(
     (time) => (time.innerHTML = formatedDate + " " + formattedTime)
   );
-};
+}
+
+
 
 function q1(who) {
   switch (who) {
     case "myself":
+      document.querySelectorAll("h4.you").forEach((you) => (you.style.display = "inline"));
       document.getElementById("age").style.display = "block";
       document.getElementById("q1Under12").disabled = true;
       document.getElementById("q1Over12").disabled = true;
@@ -54,12 +45,14 @@ function q1(who) {
       document.getElementById("q1Under12").disabled = true;
       document.getElementById("q1Myself").disabled = true;
       document.getElementById("contact").style.display = "block";
+      document.querySelectorAll("h4.child").forEach((child) => (child.style.display = "inline"));
       break;
     default:
       document.getElementById("q1Over12").disabled = true;
       document.getElementById("q1Myself").disabled = true;
       adult = false;
       document.getElementById("contact").style.display = "block";
+      document.querySelectorAll("h4.child").forEach((child) => (child.style.display = "inline"));
       break;
   }
 }
@@ -73,6 +66,7 @@ function age(age) {
     default:
       document.getElementById("contact").style.display = "block";
       document.getElementById("ageUnder").disabled = true;
+      window.scrollBy(0, 1000);
       break;
   }
 }
@@ -86,7 +80,7 @@ function contact(YN) {
     default:
       document.getElementById("travel").style.display = "block";
       document.getElementById("contactYes").disabled = true;
-
+      window.scrollBy(0, 1000);
       break;
   }
 }
@@ -102,12 +96,13 @@ function travel(YN) {
         case true:
           document.getElementById("fullSymptomps").style.display = "block";
           document.getElementById("travelYes").disabled = true;
+          window.scrollBy(0, 520);
 
           break;
         default:
           document.getElementById("seriousSymptomps").style.display = "block";
           document.getElementById("travelYes").disabled = true;
-
+          window.scrollBy(0, 1000);
           break;
       }
       break;
@@ -123,7 +118,7 @@ function fullSymptomps(YN) {
     default:
       document.getElementById("proof").style.display = "block";
       document.getElementById("fullSymptomsYes").disabled = true;
-
+      window.scrollBy(0, 1000);
       break;
   }
 }
@@ -137,7 +132,7 @@ function seriousSymptomps(YN) {
     default:
       document.getElementById("smallSymptomps").style.display = "block";
       document.getElementById("seriousSymptompsNo").disabled = true;
-
+      window.scrollBy(0, 1000);
       break;
   }
 }
@@ -153,7 +148,7 @@ function smallSymptomps(YN) {
         case true:
           document.getElementById("proof").style.display = "block";
           document.getElementById("smallSymptompsNo").disabled = true;
-
+          window.scrollBy(0, 1000);
           break;
         default:
           document.getElementById("who").style.display = "none";

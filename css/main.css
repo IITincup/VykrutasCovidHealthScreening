@@ -12,10 +12,11 @@
     U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
 }
 
+
+
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
   font-family: "Poppins";
@@ -89,6 +90,14 @@ body {
   display: none;
 }
 
+.you, .child {
+  display: none;
+}
+
+h4#question {
+  display: inline;
+}
+
 #passed {
   background-color: rgb(24, 177, 80);
   color: white;
@@ -124,7 +133,7 @@ body {
 
 #result {
   margin: 0;
-  margin-top: 4rem;
+  margin-top: 6rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -155,28 +164,13 @@ button:disabled {
   color: rgba(255, 255, 255, 0.171)
 }
 
-input[type="button"] {
-  background-color: #ffffff;
-  margin-top: 0.2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: "Poppins";
-
-  border-radius: 10px;
-  border: 1px solid rgb(0, 0, 0);
-}
-
-input[type="button"]:disabled {
-  background-color: rgba(0, 0, 0, 0.205);
-  color: rgba(255, 255, 255, 0.171)
-}
-
 li {
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 
 ul {
-  padding: 0;
+  list-style-position: inside;
+  padding-left: 10px;
 }
 
 h1.time {
@@ -193,4 +187,5 @@ div.header h2 {
 
 h4 {
   text-shadow: 1px 2px 2px black;
+  display: inline;
 }
