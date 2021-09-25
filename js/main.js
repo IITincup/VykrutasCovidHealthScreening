@@ -135,7 +135,7 @@ function seriousSymptomps(YN) {
       document.getElementById("notpassed").style.display = "block";
       break;
     default:
-      document.getElementById("proof").style.display = "block";
+      document.getElementById("smallSymptomps").style.display = "block";
       document.getElementById("seriousSymptompsNo").disabled = true;
 
       break;
